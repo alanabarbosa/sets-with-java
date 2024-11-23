@@ -5,9 +5,9 @@ import java.util.Set;
 
 public class Sets {
 	public static void main(String[] args) {
-		Set<String> setA = new HashSet<String>();
-		Set<String> setB = new HashSet<String>();
-		Set<String> setC = new HashSet<String>();
+		Set<String> setA = new HashSet<>();
+		Set<String> setB = new HashSet<>();
+		Set<String> setC = new HashSet<>();
 		
 		setA.add("Apple");
 		setA.add("Banana");
@@ -57,15 +57,15 @@ public class Sets {
 		}
      
 		
-		Set<String> union = new HashSet<String>(setA);
+		Set<String> union = new HashSet<>(setA);
 		union.addAll(setB);		
 		System.out.println("\nUnion (Set A ∪ Set B): " + union);
 		
-		Set<String> intersection = new HashSet<String>(setA);
+		Set<String> intersection = new HashSet<>(setA);
 		intersection.retainAll(setB);
 		System.out.println("Intersection (Set A ∩ Set B): " + intersection);
 		
-		Set<String> difference = new HashSet<String>(setA);
+		Set<String> difference = new HashSet<>(setA);
 		difference.removeAll(setB);
 		System.out.println("Difference (Set A - Set B): " + difference + "\n");	
 	}
